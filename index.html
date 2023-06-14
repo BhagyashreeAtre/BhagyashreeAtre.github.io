@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorting Visualizer</title>
+    <style>
+         .waviy {
+    text-align: left;
+    position: relative;
+  }
+        .waviy span {
+          position: relative;
+          display: inline-block;
+          font-size: 60px;
+          color: #fff;
+          text-transform: uppercase;
+          animation: flip 2s infinite;
+          animation-delay: calc(.2s * var(--i))
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/textstyle.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="#">
+								<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
+                            </a>
+                          <h3>Sorting Visualizer</h3> 
+                        </h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                   <h1 class="hero-title mt-0">
+                                <div class="waviy">
+                                    <span style="--i:1">S</span>
+                                    <span style="--i:2">o</span>
+                                    <span style="--i:3">r</span>
+                                    <span style="--i:4">t</span>
+                                    <span style="--i:5">i</span>
+                                    <span style="--i:6">n</span>
+                                    <span style="--i:7">g</span>
+                                    <br>
+                                    <span style="--i:8">V</span>
+                                    <span style="--i:9">i</span>
+                                    <span style="--i:10">s</span>
+                                    <span style="--i:11">u</span>
+                                    <span style="--i:12">a</span>
+                                    <span style="--i:13">l</span>
+                                    <span style="--i:14">i</span>
+                                    <span style="--i:15">z</span>
+                                    <span style="--i:16">e</span>
+                                    <span style="--i:17">r</span>
+                                   </div>
+
+                        </h1>
+	                        <p class="hero-paragraph">📊 Sorting Visualizer is a web app for visualizing a bunch of different sorting algorithms Like Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort With the functionality of (Speed Control) and (Array Size Control).</p>
+	                        <div class="hero-cta"><a class="button button-primary" href="sorting.html">Sort </a><a class="button" href="#abtdev">About developer</a></div>
+						</div>
+						<div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05"></div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-01.svg" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Bubble sort</h4>
+                                    <p class="text-sm mb-0">Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Insertion sort</h4>
+                                    <p class="text-sm mb-0">Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part..</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Selection sort</h4>
+                                    <p class="text-sm mb-0">Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-04.svg" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Merge sort</h4>
+                                    <p class="text-sm mb-0">Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-05.svg" alt="Feature 05">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Quick sort</h4>
+                                    <p class="text-sm mb-0"> QuickSort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot. Any element can be selected as pivot.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-06.svg" alt="Feature 06">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Heap sort</h4>
+                                    <p class="text-sm mb-0">Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to the selection sort where we first find the minimum element and place the minimum element at the beginning. Repeat the same process for the remaining elements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">Use of Sorting Visualizer</h2>
+                            <p class="section-paragraph mb-0">The arrangement of data in a preferred order is called sorting in the data structure. By sorting data, it is easier to search through it quickly and easily</p>
+                        </div>
+						<div class="pricing-tables-wrap">
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner is-revealing">
+                                    <div class="pricing-table-main">
+                                        
+										<div class="pricing-table-features-title text-xs pt-24 pb-24">What you will get to learn from sorting Visualizer?</div>
+                                        <ul class="pricing-table-features list-reset text-xs">
+                                            <li>
+                                                <span>Easy visualization of various sorting techniques.</span>
+                                            </li>
+                                            <li>
+                                                <span>Sorting algortihms concepts become clear.</span>
+                                            </li>
+                                            <li>
+                                                <span>Comparison between working of different algorithms</span>
+                                            </li>
+											<li>
+												<span>Sorting can be understood in less time.</span>
+											</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta mb-8">
+                                        <a class="button button-primary button-shadow button-block" href="sorting.html">Try sorting Visualizer now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			
+        </main>
+
+        <footer class="site-footer" id="abtdev">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+						<a href="#">
+							<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
+						</a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href=mailto:bhagyashriatre08@gmail.com?subject="HTML link">Contact</a>
+                            <!--<a href="#">Contact</a>-->
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li style="background-color: aliceblue; border-radius: 5px;">
+                            <a href="https://github.com/BhagyashreeAtre" target="_blank">
+                                <span class="screen-reader-text">Github</span>
+                                <img src="src/images/github.png" alt=""width="20" height="20">
+                               <!-- <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="src/images/github.png" fill="#0270D7"/>
+                                </svg>-->
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/bhagyashree-atre-06480b1b6/" target="_blank">
+                                <span class="screen-reader-text">LinkedIn</span>
+                                <img src="src/images/linkedin.png" alt=""width="25" height="25">
+                               <!-- <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0270D7"/>
+                                </svg>-->
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2023 Sorting Visualizer, All Rights reserved Bhagyashree Atre</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>
